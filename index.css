@@ -1,0 +1,15 @@
+body{
+    background-color: #131415;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    display: flex;
+}
+.titulo img{
+    width: 5rem;
+    margin-right: 1rem;
+}
