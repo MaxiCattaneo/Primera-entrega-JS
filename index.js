@@ -45,30 +45,33 @@ const Pizzas = [
 /* console.log(pizza) */
 
 
-console.log(`A) Imprimir en consola todos las pizzas con id impar`)
+console.log(`A) Imprimir en consola todos las pizzas con id impar`);
 
 const idPares = Pizzas.filter(pizza => pizza.id % 2 != 0)
     idPares.forEach((pizza) => {
    console.log(`La pizza ${pizza.nombre} tiene id impar`)
 });
 
-console.log(`B)¿Hay alguna pizza que valga menos de $600?`) 
+
+console.log(`B)¿Hay alguna pizza que valga menos de $600?`);
 
 const hayProductosConPrecioMenorA600 = 
     Pizzas.some(pizza => pizza.precio < 600)
     ? console.log(`Hay pizzas con precio menor a $600`)
     : console.log(`No hay pizzas con precio menor a $600`);
 
-console.log(`C) El nombre de cada pizza con su respectivo precio.`)
+
+console.log(`C) El nombre de cada pizza con su respectivo precio.`);
 
 const ListaDePizzasConPrecio =
     Pizzas.forEach((pizza) => {
     console.log(`La pizza ${pizza.nombre} cuesta $${pizza.precio}`)
     });
 
-console.log(`D) Todos los ingredientes de cada pizza`)
+    
+console.log(`D) Todos los ingredientes de cada pizza`);
 
 const IngredientesDeCadaPizza =
     Pizzas.forEach((pizza) =>{
-        console.log(`La pizza ${pizza.nombre} tiene los siguientes ingredientes: ${pizza.ingredientes}`)
+        console.log(`La pizza ${pizza.nombre} tiene los siguientes ingredientes: ${pizza.ingredientes.join(`, `)}`)
     });
